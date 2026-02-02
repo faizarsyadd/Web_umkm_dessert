@@ -68,7 +68,7 @@ const products = [
     desc: "Bervariasi.",
     longDesc:
       " Teksturnya lembut, manisnya pas, bikin repeat order.",
-    price: 90000,
+    price: 60000,
     rating: 4.9,
     stock: "Limited",
     category: "chocolate",
@@ -92,11 +92,11 @@ const products = [
   },
   {
     id: "p4",
-    name: "Puding Ulang tahun mini isi 6",
+    name: "Puding Ulang tahun tipe 2",
     desc: "Bervariasi.",
     longDesc:
-      " Teksturnya lembut, manisnya pas, bikin repeat order.",
-    price: 60000,
+      " Puding yg enak manis yg pas.",
+    price: 90000,
     rating: 4.9,
     stock: "Limited",
     category: "chocolate",
