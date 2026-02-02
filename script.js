@@ -77,7 +77,7 @@ const products = [
     ingredients: ["Coklat", "Susu", "Cream", "coklat", "Agar-agar premium"],
   },
  {
-    id: "p1",
+    id: "p3",
     name: "Puding Sedang",
     desc: "Rasa Puding Yang enak .",
     longDesc:
@@ -91,7 +91,7 @@ const products = [
     ingredients: ["Susu", "Vanilla", "Cream", "coklat", "Agar-agar premium"],
   },
   {
-    id: "p2",
+    id: "p4",
     name: "Puding Ulang tahun mini isi 6",
     desc: "Bervariasi.",
     longDesc:
@@ -105,7 +105,7 @@ const products = [
     ingredients: ["Coklat", "Susu", "Cream", "coklat", "Agar-agar premium"],
   },
   {
-    id: "p1",
+    id: "p5",
     name: "Puding Ulang Tahun",
     desc: "Rasa Puding Yang enak .",
     longDesc:
@@ -119,18 +119,74 @@ const products = [
     ingredients: ["Susu", "Vanilla", "Cream", "anggur", "Agar-agar premium"],
   },
   {
-    id: "p1",
-    name: "Puding Ulang Tahun",
-    desc: "perpaduan rasa silverqueen tiramisu  .",
+    id: "p6",
+    name: "Puding Hampers Lebaran",
+    desc: "Cocok dan pas banget udah mau bulan Ramadhan.",
     longDesc:
       " Paket khusus bulan Ramadhan isi 3",
-    price: 90000,
+    price: 35000,
     rating: 4.8,
     stock: "Ready",
     category: "classic",
     bestSeller: true,
     image: "assets/products/paket1.jpeg",
-    ingredients: ["Silverqueen", "Vanilla", "Cream", "Tiramisu", "Agar-agar premium"],
+    ingredients: ["Silverqueen","Tiramisu"],
+  },
+  {
+    id: "p7",
+    name: "Puding Hampers Lebaran tipe 2",
+    desc: "Cocok dan pas banget udah mau bulan Ramadhan.",
+    longDesc:
+      " Paket khusus bulan Ramadhan isi 3",
+    price: 30000,
+    rating: 4.8,
+    stock: "Ready",
+    category: "classic",
+    bestSeller: true,
+    image: "assets/products/puding1.jpeg",
+    ingredients: ["Silverqueen","Tiramisu"],
+  },
+  {
+    id: "p8",
+    name: "Puding bulat",
+    desc: "Cocok dan pas banget buat acara kumpul bareng teman.",
+    longDesc:
+      " isi banyak buah nya dan jelas rasanya enak",
+    price: 155000,
+    rating: 4.8,
+    stock: "Ready",
+    category: "classic",
+    bestSeller: true,
+    image: "assets/products/pudingbulat.jpeg",
+    ingredients: ["Silverqueen","Tiramisu"],
+  },
+  {
+    id: "p9",
+    name: "es capcin",
+    desc: "Manis dan menyegarkan dan tentunya enak.",
+    longDesc:
+      " isi banyak buah nya dan jelas rasanya enak",
+    price: 7000,
+    rating: 4.8,
+    stock: "Ready",
+    category: "classic",
+    bestSeller: true,
+    image: "assets/products/es.jpeg",
+    ingredients: ["Capucino","coffee"],
+  },
+  {
+    id: "p10",
+    name: "Tiramisu",
+    desc: "Cocok dan pas banget buat kamu yg suka manis.",
+    longDesc:
+      " seperti browniez manis dengan kacang almond dan enak",
+    price: 10000,
+    rating: 4.8,
+    stock: "Ready",
+    category: "classic",
+    bestSeller: true,
+    image: "assets/products/tiramisu.jpeg",
+    ingredients: ["coklat","Tiramisu"],
   },
 ];
 

@@ -1704,6 +1704,15 @@ select {
     overflow: auto;
     border-radius: 22px;
   }
+/* kolaborasi */
+.social-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* bikin bulat */
+  object-fit: cover;
+  margin-right: 12px;
+}
+
 
   .modal-close {
     top: 10px;
