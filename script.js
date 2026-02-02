@@ -96,7 +96,7 @@ const products = [
     desc: "Bervariasi.",
     longDesc:
       " Teksturnya lembut, manisnya pas, bikin repeat order.",
-    price: 90000,
+    price: 60000,
     rating: 4.9,
     stock: "Limited",
     category: "chocolate",
