@@ -19,7 +19,7 @@
 /* =========================
    CONFIG
 ========================= */
-const whatsappNumber = "6281234567890"; // change to your real number
+const whatsappNumber = "6281318696329"; // change to your real number
 
 /* =========================
    DOM HELPERS
