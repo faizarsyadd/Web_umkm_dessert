@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Dessert Naswa — Premium Luxury Pudding</title>
+
+  <!-- SEO -->
+  <meta name="description" content="My Dessert Naswa - Puding premium lembut & creamy. Fresh dibuat setiap hari. Pesan cepat via WhatsApp." />
+  <meta name="theme-color" content="#f6efe5" />
+
+  <!-- Google Fonts (Luxury Typography) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- =========================
+       PREMIUM BACKGROUND LAYERS
+  ========================== -->
+  <div class="bg-luxury" aria-hidden="true">
+    <div class="bg-gradient"></div>
+    <div class="bg-glow"></div>
+    <div class="bg-grain"></div>
+  </div>
+
+  <!-- =========================
+       TOASTS
+  ========================== -->
+  <div class="toast-wrap" id="toastWrap" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- =========================
+       BACK TO TOP
+  ========================== -->
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- =========================
+       CART DRAWER OVERLAY
+  ========================== -->
+  <div class="overlay" id="overlay" aria-hidden="true"></div>
+
+  <!-- =========================
+       NAVBAR
+  ========================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <!-- Brand -->
+      <a class="brand" href="#home" aria-label="My Dessert Naswa Home">
+        <img src="assets/icon.png" alt="My Dessert Naswa Icon" class="brand-icon" />
+        <div class="brand-text">
+          <span class="brand-name">My Dessert Naswa</span>
+          <span class="brand-tagline">Luxury Pudding</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-links" id="navLinks" aria-label="Navigasi utama">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#best-seller" class="nav-link">Best Seller</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="nav-actions">
+        <div class="search-wrap" role="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input id="searchInput" type="text" placeholder="Cari pudding..." aria-label="Cari produk" />
+        </div>
+
+        <button class="icon-btn cart-btn" id="cartBtn" aria-label="Buka cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="badge" id="cartBadge">0</span>
+        </button>
+
+        <button class="icon-btn hamburger" id="hamburger" aria-label="Buka menu mobile">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <a href="#home" class="m-link">Home</a>
+        <a href="#best-seller" class="m-link">Best Seller</a>
+        <a href="#menu" class="m-link">Menu</a>
+        <a href="#reviews" class="m-link">Reviews</a>
+        <a href="#faq" class="m-link">FAQ</a>
+        <a href="#contact" class="m-link">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================
+       HERO SECTION
+  ========================== -->
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-kicker">
+            <span class="dot"></span>
+            <span>Premium  Dessert • Crafted Daily</span>
+          </div>
+
+          <h1 class="hero-title">
+            Puding Premium, <span class="gold">Lembut</span> & <span class="gold">Creamy</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Fresh dibuat setiap hari • Pesan cepat via WhatsApp
+          </p>
+
+          <div class="typing-line" aria-label="Varian rasa">
+            <span class="typing-label">Rasa:</span>
+            <span class="typing-text" id="typingText"></span>
+            <span class="typing-caret" aria-hidden="true"></span>
+          </div>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#menu">
+              <i class="fa-solid fa-utensils"></i>
+              Lihat Menu
+            </a>
+            <button class="btn btn-ghost" id="heroOrderBtn">
+              <i class="fa-brands fa-whatsapp"></i>
+              Pesan Sekarang
+            </button>
+          </div>
+
+          <div class="trust-badges">
+            <div class="trust-card">
+              <i class="fa-solid fa-seedling"></i>
+              <div>
+                <strong>Fresh Daily</strong>
+                <span>Selalu baru</span>
+              </div>
+            </div>
+            <div class="trust-card">
+              <i class="fa-solid fa-certificate"></i>
+              <div>
+                <strong>Halal</strong>
+                <span>Nyaman dinikmati</span>
+              </div>
+            </div>
+            <div class="trust-card">
+              <i class="fa-solid fa-bolt"></i>
+              <div>
+                <strong>Fast Response</strong>
+                <span>Admin cepat</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+                <div class="hero-media">
+        <video id="heroVideo" class="hero-video" autoplay muted loop playsinline>
+            <source src="assets/products/hero.mp4" type="video/mp4" />
+        </video>
+
+        <!-- Button Sound -->
+        <button id="soundToggle" class="sound-toggle" aria-label="Toggle Sound">
+            <i class="fa-solid fa-volume-xmark"></i>
+            <span>Mute</span>
+        </button>
+        </div>
+
+
+            <div class="hero-float-badge">
+              <i class="fa-solid fa-star"></i>
+              <span>Taste</span>
+            </div>
+          </div>
+
+          <div class="hero-mini-cards">
+            <div class="mini-card reveal">
+              <span class="mini-title">Packaging</span>
+              <span class="mini-sub">Elegan & aman</span>
+            </div>
+            <div class="mini-card reveal">
+              <span class="mini-title">Textur</span>
+              <span class="mini-sub">Super creamy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         BEST SELLER SECTION
+    ========================== -->
+    <section class="section" id="best-seller">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Best Seller</h2>
+            <p class="section-subtitle">Favorit pelanggan — premium, lembut, dan bikin nagih.</p>
+          </div>
+          <div class="section-pill">
+            <i class="fa-solid fa-crown"></i>
+            <span>Luxury Picks</span>
+          </div>
+        </div>
+
+        <div class="best-grid" id="bestSellerGrid">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         MENU / PRODUCTS SECTION
+    ========================== -->
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Menu Puding</h2>
+            <p class="section-subtitle">Pilih varian terbaik — classic, chocolate, sampai fruity.</p>
+          </div>
+
+          <div class="menu-controls">
+            <div class="filter-tabs" role="tablist" aria-label="Filter kategori">
+              <button class="tab active" data-filter="all" role="tab">All</button>
+              <button class="tab" data-filter="classic" role="tab">Classic</button>
+              <button class="tab" data-filter="chocolate" role="tab">Chocolate</button>
+              <button class="tab" data-filter="fruity" role="tab">Fruity</button>
+              <button class="tab" data-filter="best" role="tab">Best Seller</button>
+            </div>
+
+            <div class="sort-wrap">
+              <i class="fa-solid fa-arrow-up-wide-short"></i>
+              <select id="sortSelect" aria-label="Sorting produk">
+                <option value="default">Sorting</option>
+                <option value="low">Termurah</option>
+                <option value="high">Termahal</option>
+                <option value="rating">Rating Tertinggi</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skeleton loading -->
+        <div class="product-grid" id="productGrid" aria-live="polite">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         REVIEWS SECTION
+    ========================== -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Reviews</h2>
+            <p class="section-subtitle">Cerita manis dari pelanggan yang sudah mencoba.</p>
+          </div>
+          <div class="section-pill">
+            <i class="fa-solid fa-heart"></i>
+            <span>Trusted</span>
+          </div>
+        </div>
+
+        <div class="review-carousel reveal">
+          <div class="review-track" id="reviewTrack">
+            <!-- Rendered by JS -->
+          </div>
+
+          <div class="review-controls">
+            <button class="icon-btn" id="prevReview" aria-label="Review sebelumnya">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="icon-btn" id="nextReview" aria-label="Review berikutnya">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+
+          <div class="review-dots" id="reviewDots" aria-label="Indikator carousel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         FAQ SECTION
+    ========================== -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">FAQ</h2>
+            <p class="section-subtitle">Jawaban cepat sebelum kamu checkout.</p>
+          </div>
+          <div class="section-pill">
+            <i class="fa-solid fa-circle-question"></i>
+            <span>Help</span>
+          </div>
+        </div>
+
+        <div class="faq-wrap reveal" id="faqWrap">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         CONTACT SECTION
+    ========================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Contact</h2>
+            <p class="section-subtitle">Punya request topping atau mau order cepat dan ingin tanya puding yg lebih murah? Chat kami sekarang.</p>
+          </div>
+          <div class="section-pill">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Fast Order</span>
+          </div>
+        </div>
+
+        <div class="contact-grid reveal">
+          <div class="contact-card">
+            <h3 class="card-title">Kirim Pesan</h3>
+            <p class="card-subtitle">Kami balas secepat mungkin 💛</p>
+
+            <form id="contactForm" class="form">
+              <div class="field">
+                <label for="cName">Nama</label>
+                <input type="text" id="cName" placeholder="Nama kamu" autocomplete="name" />
+                <small class="error" data-error="cName"></small>
+              </div>
+
+              <div class="field">
+                <label for="cPhone">No. WhatsApp</label>
+                <input type="tel" id="cPhone" placeholder="08xxxxxxxxxx" autocomplete="tel" />
+                <small class="error" data-error="cPhone"></small>
+              </div>
+
+              <div class="field">
+                <label for="cMsg">Pesan</label>
+                <textarea id="cMsg" rows="4" placeholder="Tulis pesanmu..."></textarea>
+                <small class="error" data-error="cMsg"></small>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                <i class="fa-brands fa-whatsapp"></i>
+                Kirim via WhatsApp
+              </button>
+            </form>
+          </div>
+
+          <div class="contact-card contact-info">
+            <h3 class="card-title">Social</h3>
+            <p class="card-subtitle">Follow & order langsung:</p>
+
+            <div class="social-list">
+              <a class="social-item" href="#" id="socialWhatsApp" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <span>Order & fast response</span>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+
+              <a class="social-item" href="https://www.instagram.com/my_dessertnaswa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+                <div>
+                  <strong>Instagram</strong>
+                  <span>Daily dessert updates</span>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+
+              <a class="social-item" href="#" aria-label="TikTok">
+                <i class="fa-brands fa-tiktok"></i>
+                <div>
+                  <strong>TikTok</strong>
+                  <span>Behind the scenes</span>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="contact-note">
+              <div class="note-icon">
+                <i class="fa-solid fa-shield-heart"></i>
+              </div>
+              <div>
+                <strong>Luxury Quality Promise</strong>
+                <p>Setiap pudding dibuat dengan bahan premium dan proses higienis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/icon.png" alt="My Dessert Naswa Icon" />
+        <div>
+          <strong>My Dessert Naswa</strong>
+          <span>Premium Luxury Pudding</span>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="#menu">Menu</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-copy">
+        <span>© <span id="yearNow"></span> Web By Faiz. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================
+       QUICK VIEW MODAL
+  ========================== -->
+  <div class="modal" id="quickModal" aria-hidden="true" role="dialog" aria-label="Quick View Modal">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Tutup modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-grid">
+        <div class="modal-media">
+          <div class="modal-img-wrap">
+            <img id="modalImg" src="" alt="Preview produk" />
+            <div class="modal-badge" id="modalBadge">Ready</div>
+          </div>
+        </div>
+
+        <div class="modal-info">
+          <div class="modal-head">
+            <h3 id="modalTitle">Nama Produk</h3>
+            <div class="modal-rating" id="modalRating"></div>
+          </div>
+
+          <p class="modal-desc" id="modalDesc"></p>
+
+          <div class="modal-meta">
+            <div class="price-line">
+              <span class="price" id="modalPrice">Rp 0</span>
+              <span class="mini-muted">per cup</span>
+            </div>
+            <div class="pill" id="modalCategory">
+              <i class="fa-solid fa-tag"></i>
+              <span>Classic</span>
+            </div>
+          </div>
+
+          <div class="ingredients">
+            <strong>Ingredients</strong>
+            <ul id="modalIngredients"></ul>
+          </div>
+
+          <div class="qty-row">
+            <span class="qty-label">Quantity</span>
+            <div class="qty-control">
+              <button class="qty-btn" id="qtyMinus" aria-label="Kurangi quantity">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <span class="qty-value" id="qtyValue">1</span>
+              <button class="qty-btn" id="qtyPlus" aria-label="Tambah quantity">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="modal-actions">
+            <button class="btn btn-primary" id="modalAddCart">
+              <i class="fa-solid fa-bag-shopping"></i>
+              Add to Cart
+            </button>
+
+            <button class="btn btn-ghost" id="modalBuyNow">
+              <i class="fa-brands fa-whatsapp"></i>
+              Buy via WhatsApp
+            </button>
+          </div>
+
+          <div class="mini-hint">
+            <i class="fa-solid fa-lock"></i>
+            <span>Checkout aman via WhatsApp • Tanpa login</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================
+       CART DRAWER
+  ========================== -->
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-head">
+      <div>
+        <h3>Cart</h3>
+        <p class="mini-muted">Pesanan manismu ✨</p>
+      </div>
+      <button class="icon-btn" id="cartClose" aria-label="Tutup cart">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="cart-body" id="cartItems">
+      <!-- Rendered by JS -->
+    </div>
+
+    <div class="cart-foot">
+      <div class="totals">
+        <div class="line">
+          <span>Subtotal</span>
+          <strong id="subtotalText">Rp 0</strong>
+        </div>
+        <div class="line total">
+          <span>Total</span>
+          <strong id="totalText">Rp 0</strong>
+        </div>
+      </div>
+
+      <button class="btn btn-primary btn-full" id="checkoutBtn">
+        <i class="fa-brands fa-whatsapp"></i>
+        Checkout via WhatsApp
+      </button>
+
+      <button class="btn btn-soft btn-full" id="clearCartBtn">
+        <i class="fa-solid fa-trash"></i>
+        Clear Cart
+      </button>
+    </div>
+  </aside>
+
+  <!-- =========================
+       CHECKOUT MODAL
+  ========================== -->
+  <div class="modal" id="checkoutModal" aria-hidden="true" role="dialog" aria-label="Checkout Modal">
+    <div class="modal-card checkout-card">
+      <button class="modal-close" id="checkoutClose" aria-label="Tutup checkout">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="checkout-head">
+        <h3>Checkout</h3>
+        <p class="mini-muted">Lengkapi data untuk dikirim via WhatsApp.</p>
+      </div>
+
+      <form id="checkoutForm" class="form">
+        <div class="field">
+          <label for="coName">Nama</label>
+          <input type="text" id="coName" placeholder="Nama lengkap" />
+          <small class="error" data-error="coName"></small>
+        </div>
+
+        <div class="field">
+          <label for="coAddress">Alamat</label>
+          <textarea id="coAddress" rows="3" placeholder="Alamat lengkap untuk pengiriman"></textarea>
+          <small class="error" data-error="coAddress"></small>
+        </div>
+
+        <div class="field">
+          <label for="coPay">Metode Pembayaran</label>
+          <select id="coPay">
+            <option value="COD">COD</option>
+            <option value="Transfer">Transfer</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="coNote">Catatan (optional)</label>
+          <input type="text" id="coNote" placeholder="Contoh: tanpa topping / kirim jam 5 sore" />
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full">
+          <i class="fa-brands fa-whatsapp"></i>
+          Kirim Pesanan
+        </button>
+
+        <div class="mini-hint">
+          <i class="fa-solid fa-circle-info"></i>
+          <span>Pesanan akan otomatis dibuat dalam format rapi.</span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
