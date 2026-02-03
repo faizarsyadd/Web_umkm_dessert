@@ -183,7 +183,7 @@ const products = [
     price: 10000,
     rating: 4.8,
     stock: "Ready",
-    category: "classic",
+    category: "chocolate",
     bestSeller: true,
     image: "assets/products/tiramisu.jpeg",
     ingredients: ["coklat","Tiramisu"],
